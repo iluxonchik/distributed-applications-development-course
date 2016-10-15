@@ -37,7 +37,7 @@ namespace Lab2
 
         public static void Main()
         {
-            MyDelegate a, b, c, d;
+            MyDelegate a, b, c, d, none;
 
             // Create the delegate object a that references
             // the method Hello:
@@ -61,6 +61,18 @@ namespace Lab2
             d("D");
             Console.WriteLine("Passing a delegate as an argument:");
             CallMe(a);
+
+            Console.WriteLine("Calling a null delegate:");
+            none = null;
+            try
+            {
+                none("Too Pythonish?");
+            }
+            catch (NullReferenceException e)
+            {
+
+                Console.WriteLine("  A NullReferenceExeption was caught, WHAT A SAVE!");
+            }
         }
     }
 }
