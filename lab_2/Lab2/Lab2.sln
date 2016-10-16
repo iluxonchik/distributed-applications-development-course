@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A - Delegates", "Lab2\A - D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B - Events", "B - Events\B - Events.csproj", "{B70C30DB-30A2-490A-8626-ACAC35356670}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C - Threads", "C - Threads\C - Threads.csproj", "{808B4E7F-1D4B-45D2-83BC-63099340B2D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B70C30DB-30A2-490A-8626-ACAC35356670}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B70C30DB-30A2-490A-8626-ACAC35356670}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B70C30DB-30A2-490A-8626-ACAC35356670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{808B4E7F-1D4B-45D2-83BC-63099340B2D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808B4E7F-1D4B-45D2-83BC-63099340B2D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808B4E7F-1D4B-45D2-83BC-63099340B2D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808B4E7F-1D4B-45D2-83BC-63099340B2D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
