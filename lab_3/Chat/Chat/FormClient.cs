@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Chat
 {
-    public partial class frmClient : Form
+    public partial class FormClient : Form
     {
-        public frmClient()
+        public FormClient()
         {
             InitializeComponent();
         }
 
-        private void btnSend_Click(object sender, EventArgs e)
+        public void AddMessage(string message)
+        {
+            tbChat.Text += message + Environment.NewLine;
+        }
+
+        private void FormClient_Load(object sender, EventArgs e)
         {
 
         }
