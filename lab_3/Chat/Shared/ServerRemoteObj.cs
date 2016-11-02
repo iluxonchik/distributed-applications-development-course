@@ -8,16 +8,16 @@ namespace Shared
 {
     public class ServerRemoteObj : MarshalByRefObject, IServer
     {
-        static IServer server;
+        public static IServer Server { get; set; }
 
         public void AddClient(string nick, string clientUrl)
         {
-            server.AddClient(nick, clientUrl);
+            Server.AddClient(nick, clientUrl);
         }
 
         public void SendMessage(string clientNick, string clientUrl, string message)
         {
-            server.SendMessage(clientNick, clientUrl, message);
+            Server.SendMessage(clientNick, clientUrl, message);
         }
     }
 }

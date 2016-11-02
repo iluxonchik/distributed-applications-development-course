@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace Shared
 {
-    class ClientRemoteObj : MarshalByRefObject, IClient
+    public class ClientRemoteObj : MarshalByRefObject, IClient
     {
-        private readonly IClient client;
-
-        public ClientRemoteObj(IClient client)
-        {
-            this.client = client;
-        }
+        public static IClient Client { get; set; }
 
         public void BroadcastMessage(string message)
         {
-            client.BroadcastMessage(message);
+            Client.BroadcastMessage(message);
         }
 
     }
